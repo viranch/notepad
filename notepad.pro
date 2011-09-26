@@ -16,3 +16,7 @@ SOURCES += main.cpp\
 HEADERS  += qnotepad.h
 
 FORMS    += qnotepad.ui
+
+RESOURCES += \
+    icons.qrc
+

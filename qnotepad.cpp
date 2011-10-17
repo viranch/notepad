@@ -159,7 +159,7 @@ void QNotePad::on_actionSelect_Font_triggered()
 void QNotePad::on_actionOpen_triggered()
 {
     QString fileName = QFileDialog::getOpenFileName(this);
-    if (isWindowModified()) {
+    if (isWindowModified() || !getFileName().isEmpty()) {
         QNotePad *np = new QNotePad(fileName);
         np->setAttribute(Qt::WA_DeleteOnClose);
         if (!np->getFileName().isEmpty()) {

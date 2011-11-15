@@ -1,0 +1,16 @@
+This is basic app that does not install itself.
+
+Download it:
+
+$ git clone git://github.com/viranch/notepad.git
+
+or
+
+$ wget -q https://github.com/viranch/notepad/tarball/master -O - | tar zxv
+
+Run it:
+
+$ cd path/to/notepad
+$ qmake && make
+$ ./notepad
+
